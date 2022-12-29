@@ -1,0 +1,33 @@
+while True:
+    num_1 = input("Digite o primeiro número da operação: ")
+    num_2 = input("Digite o segundo número da operação: ")
+    operador = input("Digite um operador: ")
+    
+        
+    if not num_1.isnumeric() or not num_2.isnumeric():
+        print("Syntax error")
+        continue
+    
+    num_1 = int(num_1)
+    num_2 = int(num_2)
+    
+    if operador == "+":
+        print("A soma deu: ", num_1 + num_2)
+        
+    elif operador == "-":
+        print("A subtração deu: ", num_1 - num_2)
+    
+    elif operador == "/":
+        print("A divisão deu: ", num_1 / num_2)
+        
+    elif operador == "*":
+        print("A multiplicação deu: ", num_1 * num_2)
+        
+    else:
+        print("Operador inválido")
+        
+    sair = input("Deseja encerrar? [s]im ou [n]ão?: ")
+    
+    if sair == "s":
+        break
+        
